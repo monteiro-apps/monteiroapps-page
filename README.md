@@ -18,9 +18,11 @@ python3 -m http.server 8000
 
 Domínio próprio: crie um arquivo `CNAME` com o domínio (ex.: `monteiroapps.com.br`) e configure o DNS conforme a documentação do GitHub Pages.
 
-## Formulário de contato
-O site é estático, então o formulário abre o WhatsApp com a mensagem pronta (número em `assets/js/main.js`).
-Para receber por e-mail, troque por um serviço como Formspree: defina `action` e `method="POST"` no `<form>` e remova o script de envio.
+## Contato
+- **WhatsApp:** botão que abre a conversa com a mensagem pronta (link `wa.me` no `index.html`).
+- **Formulário:** envia para monteirooapps@gmail.com pelo [FormSubmit](https://formsubmit.co) (`action` do `<form>`).
+  1. No **primeiro envio**, o FormSubmit manda um e-mail de ativação para monteirooapps@gmail.com. Clique em confirmar. Até lá as mensagens não chegam.
+  2. Depois de ativar, o FormSubmit mostra um endereço aleatório (ex.: `https://formsubmit.co/ajax/abc123...`). Troque o e-mail no `action` por ele, para o seu e-mail não ficar visível no código.
 
 ## Identidade visual
 Guia completo, cores, fontes e logos em [`brand/`](brand/IDENTIDADE-VISUAL.md).

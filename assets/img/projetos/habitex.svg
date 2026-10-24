@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" font-family="Sora, 'DM Sans', Arial, sans-serif">
+  <rect width="640" height="400" fill="#5532E0"/>
+  <circle cx="90" cy="60" r="110" fill="#2A1670" opacity=".45"/>
+  <circle cx="580" cy="370" r="90" fill="#2A1670" opacity=".45"/>
+  <rect x="228" y="28" width="184" height="372" rx="34" fill="#17151F"/>
+  <rect x="237" y="37" width="166" height="363" rx="26" fill="#F6F5FA"/>
+  <text x="252" y="76" font-size="14" font-weight="700" fill="#17151F">Hábitos</text>
+  <rect x="368" y="62" width="22" height="22" rx="11" fill="#5532E0"/>
+  <path d="M379 68v10M374 73h10" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <!-- hábito água -->
+  <rect x="249" y="92" width="142" height="104" rx="16" fill="#FFFFFF" stroke="#E7E4F0"/>
+  <rect x="259" y="102" width="26" height="26" rx="8" fill="#EDE9FE"/>
+  <path d="M272 107c-4 5-6 8-6 11a6 6 0 0 0 12 0c0-3-2-6-6-11z" fill="none" stroke="#5532E0" stroke-width="1.8" stroke-linejoin="round"/>
+  <text x="292" y="114" font-size="11" font-weight="700" fill="#17151F">Água</text>
+  <text x="292" y="126" font-size="8" fill="#6B6878">1.500 / 3.000 ml</text>
+  <rect x="357" y="104" width="24" height="24" rx="12" fill="#5532E0"/>
+  <path d="M369 110v12M363 116h12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  <rect x="259" y="138" width="122" height="6" rx="3" fill="#EDE9FE"/>
+  <rect x="259" y="138" width="61" height="6" rx="3" fill="#5532E0"/>
+  <g font-size="7" fill="#6B6878" text-anchor="middle">
+    <text x="266" y="162">S</text><text x="284" y="162">T</text><text x="302" y="162">Q</text><text x="320" y="162">Q</text><text x="338" y="162">S</text><text x="356" y="162">S</text><text x="374" y="162">D</text>
+  </g>
+  <circle cx="266" cy="178" r="7" fill="#5532E0"/><circle cx="284" cy="178" r="7" fill="#5532E0"/><circle cx="302" cy="178" r="7" fill="#FF6F61"/><circle cx="320" cy="178" r="7" fill="#5532E0"/><circle cx="338" cy="178" r="7" fill="#5532E0"/><circle cx="356" cy="178" r="7" fill="#E7E4F0"/><circle cx="374" cy="178" r="7" fill="#E7E4F0"/>
+  <!-- hábito leitura -->
+  <rect x="249" y="206" width="142" height="58" rx="16" fill="#FFFFFF" stroke="#E7E4F0"/>
+  <rect x="259" y="216" width="26" height="26" rx="8" fill="#EDE9FE"/>
+  <path d="M265 222h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2h-7zM283 222h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z" fill="none" stroke="#5532E0" stroke-width="1.6" stroke-linejoin="round"/>
+  <text x="292" y="228" font-size="11" font-weight="700" fill="#17151F">Leitura</text>
+  <text x="292" y="240" font-size="8" fill="#6B6878">20 / 30 min</text>
+  <rect x="259" y="250" width="122" height="5" rx="2.5" fill="#EDE9FE"/>
+  <rect x="259" y="250" width="81" height="5" rx="2.5" fill="#5532E0"/>
+  <!-- rotina -->
+  <text x="250" y="286" font-size="9" font-weight="700" fill="#17151F">Rotina de hoje</text>
+  <rect x="249" y="294" width="142" height="28" rx="10" fill="#FFFFFF" stroke="#E7E4F0"/>
+  <rect x="257" y="302" width="12" height="12" rx="4" fill="#5532E0"/>
+  <path d="M260 308l2 2 4-4" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="276" y="305" width="60" height="5" rx="2.5" fill="#E7E4F0"/>
+  <rect x="249" y="328" width="142" height="28" rx="10" fill="#FFFFFF" stroke="#E7E4F0"/>
+  <rect x="257" y="336" width="12" height="12" rx="4" fill="none" stroke="#B9A8FF" stroke-width="1.5"/>
+  <rect x="276" y="339" width="72" height="5" rx="2.5" fill="#E7E4F0"/>
+  <!-- cartões flutuantes -->
+  <rect x="58" y="230" width="146" height="64" rx="16" fill="#FFFFFF"/>
+  <text x="74" y="254" font-size="9" fill="#6B6878">Sequência</text>
+  <text x="74" y="277" font-size="16" font-weight="700" fill="#17151F">5 dias</text>
+  <circle cx="184" cy="252" r="5" fill="#FF6F61"/>
+  <rect x="436" y="110" width="150" height="64" rx="16" fill="#FFFFFF"/>
+  <circle cx="462" cy="142" r="13" fill="#EDE9FE"/>
+  <path d="M456 142l4 4 8-8" fill="none" stroke="#5532E0" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="483" y="138" font-size="10" font-weight="700" fill="#17151F">Meta batida!</text>
+  <text x="483" y="153" font-size="9" fill="#6B6878">Água · ontem</text>
+</svg>
