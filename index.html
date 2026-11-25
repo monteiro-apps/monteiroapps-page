@@ -3,57 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Monteiro Apps · Aplicativos iOS e Android</title>
-  <meta name="description" content="A Monteiro Apps transforma a sua ideia em um aplicativo para iPhone e Android, pronto para baixar na App Store e no Google Play. Também criamos sites e sistemas web.">
+  <title>Jenny Monteiro · Monteiro Apps</title>
+  <meta name="description" content="Jenny Monteiro, da Monteiro Apps: aplicativos para iPhone e Android, sites e automações com IA, do papel à loja.">
   <meta name="theme-color" content="#5532E0">
-  <meta property="og:title" content="Monteiro Apps · Seu app, do papel à loja.">
-  <meta property="og:description" content="Aplicativos para iPhone e Android, sites e sistemas web: do desenho das telas até a publicação nas lojas.">
+  <meta property="og:title" content="Jenny Monteiro · Monteiro Apps">
+  <meta property="og:description" content="Aplicativos, sites e automações com IA, do papel à loja.">
   <meta property="og:type" content="website">
-  <!-- TODO (pendente): og:url e og:image quando o domínio e a imagem de compartilhamento estiverem prontos
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  -->
+  <!-- TODO (pendente): og:url e og:image quando o domínio e a imagem de compartilhamento estiverem prontos -->
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=6">
+  <link rel="stylesheet" href="assets/css/site.css?v=1">
 </head>
 <body>
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
   <header class="topo">
-    <nav class="container topo__nav" aria-label="Principal">
-      <a href="#topo" class="marca" aria-label="Monteiro Apps, início">
-        <svg viewBox="0 0 120 120" width="40" height="40" aria-hidden="true"><rect width="120" height="120" rx="32" fill="#5532E0"/><path d="M34 82V40l26 26 26-26v42" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="98" cy="22" r="9" fill="#FF6F61"/></svg>
+    <div class="container">
+      <a href="#conteudo" class="marca" aria-label="Monteiro Apps, início">
+        <svg viewBox="0 0 120 120" width="36" height="36" aria-hidden="true"><rect width="120" height="120" rx="32" fill="#5532E0"/><path d="M34 82V40l26 26 26-26v42" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="98" cy="22" r="9" fill="#FF6F61"/></svg>
         <span class="marca__nome"><b>Monteiro</b> <span>Apps</span></span>
       </a>
-      <button type="button" class="topo__menu" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menu">
-        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="topo__menu-abrir" d="M4 7h16M4 12h16M4 17h16"/><path class="topo__menu-fechar" d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-      <ul class="topo__links" id="menu-principal">
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#processo">Como funciona</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato" class="btn btn--primario btn--pequeno">Solicitar orçamento</a></li>
-      </ul>
-    </nav>
+      <nav aria-label="Principal">
+        <a href="#projetos">Projetos</a>
+        <a href="curso.html">Curso</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#contato" class="cta">Contato</a>
+      </nav>
+    </div>
   </header>
 
   <main id="conteudo">
-    <section id="topo" class="container hero">
+    <section class="container hero">
       <div class="hero__texto">
-        <span class="selo">Aplicativos para iPhone e Android</span>
-        <h1>Seu app, do papel <span class="destaque">à loja.</span></h1>
-        <p class="hero__descricao">Você tem a ideia, a gente cuida de todo o resto: desenhamos, construímos e colocamos o seu aplicativo para baixar no iPhone e no Android. Sem complicação e sem você precisar entender nada de tecnologia.</p>
-        <div class="hero__acoes">
-          <a href="#contato" class="btn btn--primario">Quero tirar meu app do papel</a>
-          <a href="#processo" class="btn btn--secundario">Ver como funciona</a>
+        <h1>Oi, eu sou a Jenny 👋</h1>
+        <p>Desenvolvedora de apps em Flutter. Pela <b>Monteiro Apps</b>, eu faço <b>aplicativos, sites e automações com IA</b>, do papel à loja.</p>
+        <span class="local">Rio de Janeiro · aceitando projetos</span>
+      </div>
+      <div class="perfil">
+        <!-- TROCAR: coloque a foto em assets/img/jenny.jpg e troque o "J" por <img src="assets/img/jenny.jpg" alt="Jenny"> -->
+        <div class="avatar" role="img" aria-label="Foto da Jenny">J</div>
+        <div><strong>Jenny Monteiro</strong><br><small>Fundadora da Monteiro Apps</small></div>
+      </div>
+    </section>
+
+    <div class="container destaques">
+      <a class="card" href="https://play.google.com/store/apps/details?id=com.jennyffer.habitex" target="_blank" rel="noopener">
+        <div class="card__img"><img src="assets/img/projetos/habitex.png" alt="Telas do app Habitex" width="1280" height="800"></div>
+        <div class="card__rodape">
+          <div><h3>Habitex</h3><small>Baixe grátis no Google Play</small></div>
+          <span class="seta" aria-hidden="true">↗</span>
+        </div>
+      </a>
+      <a class="card" href="curso.html">
+        <div class="card__img">
+          <svg viewBox="0 0 200 125" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Três robôs trabalhando juntos">
+            <rect width="200" height="125" fill="#EDE9FE"/>
+            <rect x="14" y="92" width="172" height="8" rx="4" fill="#B9A8FF"/>
+            <g><rect x="24" y="48" width="40" height="44" rx="12" fill="#5532E0"/><circle cx="37" cy="66" r="5" fill="#fff"/><circle cx="51" cy="66" r="5" fill="#fff"/><rect x="36" y="78" width="16" height="4" rx="2" fill="#B9A8FF"/><line x1="44" y1="48" x2="44" y2="38" stroke="#5532E0" stroke-width="3" stroke-linecap="round"/><circle cx="44" cy="36" r="4" fill="#FF6F61"/></g>
+            <g><rect x="80" y="40" width="40" height="52" rx="12" fill="#17151F"/><circle cx="93" cy="60" r="5" fill="#B9A8FF"/><circle cx="107" cy="60" r="5" fill="#B9A8FF"/><rect x="92" y="74" width="16" height="4" rx="2" fill="#FF6F61"/><line x1="100" y1="40" x2="100" y2="30" stroke="#17151F" stroke-width="3" stroke-linecap="round"/><circle cx="100" cy="28" r="4" fill="#FF6F61"/></g>
+            <g><rect x="136" y="48" width="40" height="44" rx="12" fill="#FF6F61"/><circle cx="149" cy="66" r="5" fill="#fff"/><circle cx="163" cy="66" r="5" fill="#fff"/><rect x="148" y="78" width="16" height="4" rx="2" fill="#fff"/><line x1="156" y1="48" x2="156" y2="38" stroke="#FF6F61" stroke-width="3" stroke-linecap="round"/><circle cx="156" cy="36" r="4" fill="#5532E0"/></g>
+          </svg>
+        </div>
+        <div class="card__rodape">
+          <div><h3>Esquadrão de agentes de IA</h3><small>Vídeos animados com IA · curso</small></div>
+          <span class="seta" aria-hidden="true">→</span>
+        </div>
+      </a>
+    </div>
+
+    <section id="sobre" class="secao secao--branca">
+      <div class="container sobre">
+        <div class="cabeca"><span class="rotulo">Sobre</span><h2>Quem faz</h2></div>
+        <p>Eu crio aplicativos para iPhone e Android com Flutter, sites e sistemas web. Hoje também tenho um estúdio de vídeos animados que roda com uma equipe de agentes de IA: roteiro, arte, voz e edição, todo dia. Aqui eu mostro o que estou construindo e como você pode tirar a sua ideia do papel.</p>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao">
+      <div class="container">
+        <div class="cabeca"><span class="rotulo">Construindo agora</span><h2>O que já saiu do papel</h2></div>
+        <ul class="projetos">
+          <li><a class="projeto" href="https://play.google.com/store/apps/details?id=com.jennyffer.habitex" target="_blank" rel="noopener">
+            <div class="projeto__ico"><img src="assets/img/projetos/habitex.png" alt=""></div>
+            <span class="tag">No ar · Google Play</span>
+            <h3>Habitex</h3>
+            <p>Tarefas, anotações e hábitos num só lugar, com metas e um calendário colorido da semana.</p>
+          </a></li>
+          <li><div class="projeto">
+            <div class="projeto__ico"><img src="assets/img/projetos/atelie.png" alt=""></div>
+            <span class="tag">No ar</span>
+            <h3>Ateliê Tati Brandão</h3>
+            <p>SaaS de gestão financeira para salão e ateliê: cada colaboradora vê ganhos e vales, e a dona acompanha caixa, despesas e fechamento do dia.</p>
+          </div></li>
+          <li><a class="projeto" href="curso.html">
+            <div class="projeto__ico"><img src="assets/img/simbolo.svg" alt=""></div>
+            <span class="tag">No ar</span>
+            <h3>Estúdio de vídeos com IA</h3>
+            <p>Vídeos animados feitos por uma equipe de agentes de IA. O Habitex já ganha um vídeo novo por dia.</p>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="acha" aria-label="Redes sociais">
+      <div class="container">
+        <h2>Me acha em</h2>
+        <div class="redes">
+          <a href="https://instagram.com/monteiro.devv" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://tiktok.com/@monteiro.devv" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://x.com/monteirodevv" target="_blank" rel="noopener">X</a>
+          <a href="https://threads.net/@monteiro.devv" target="_blank" rel="noopener">Threads</a>
+        </div>
+        <p class="arroba">@monteiro.devv</p>
+      </div>
+    </section>
+
+    <section id="skills" class="secao secao--branca">
+      <div class="container">
+        <div class="cabeca"><span class="rotulo">Skills e stacks</span><h2>Com o que eu trabalho</h2></div>
+        <div class="stacks">
+          <div class="grupo"><h3>Apps</h3><div class="chips"><span>Flutter</span><span>Dart</span><span>Android</span><span>iOS</span><span>Google Play</span></div></div>
+          <div class="grupo"><h3>Back-end e dados</h3><div class="chips"><span>Firebase</span><span>Firestore</span><span>Supabase</span><span>SQL</span><span>RevenueCat</span></div></div>
+          <div class="grupo"><h3>Web</h3><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span></div></div>
+          <div class="grupo"><h3>IA e automação</h3><div class="chips"><span>Claude Code</span><span>Gemini</span><span>Agentes de IA</span><span>Whisper</span></div></div>
+          <div class="grupo"><h3>Vídeo e design</h3><div class="chips"><span>Remotion</span><span>Figma</span></div></div>
         </div>
       </div>
+    </section>
 
-      <div class="hero__visual">
-        <div class="celular" role="region" aria-label="Exemplo de aplicativo para você experimentar">
+    <section id="servicos" class="secao">
+      <div class="container">
+        <div class="cabeca"><span class="rotulo">Serviços</span><h2>O que eu faço por você</h2></div>
+        <div class="servicos">
+          <div class="serv"><span class="serv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><h3>Apps para iPhone e Android</h3><p>Um app só, funcionando nos dois celulares.</p></div>
+          <div class="serv"><span class="serv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span><h3>Sites</h3><p>Rápidos e bonitos no celular e no computador.</p></div>
+          <div class="serv"><span class="serv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/></svg></span><h3>Sistemas web e SaaS</h3><p>Painéis para o seu negócio ou um serviço por assinatura.</p></div>
+          <div class="serv"><span class="serv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 8V4M9 13h.01M15 13h.01"/></svg></span><h3>Automações com IA</h3><p>Tarefas repetitivas feitas sozinhas, todo dia.</p></div>
+          <div class="serv"><span class="serv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span><h3>Design das telas</h3><p>Você vê e aprova tudo antes de construir.</p></div>
+          <div class="serv"><span class="serv__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></span><h3>Publicação e suporte</h3><p>App na App Store e no Google Play, e melhorias depois.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="secao secao--branca">
+      <div class="container funciona">
+        <div class="funciona__app">
+          <div class="celular" role="region" aria-label="Exemplo de aplicativo para você experimentar">
           <div class="celular__tela">
             <div class="app" id="app-demo">
               <div class="app__conteudo">
@@ -119,164 +215,60 @@
             </div>
           </div>
         </div>
-        <p class="hero__dica"><span aria-hidden="true">👆</span> Toque e experimente: este é um exemplo do que podemos criar para você.</p>
-      </div>
-    </section>
-
-    <section class="faixa" aria-label="Plataformas">
-      <ul class="container">
-        <li>iOS</li><li>Android</li>
-      </ul>
-    </section>
-
-    <section id="servicos" class="container secao">
-      <div class="secao__titulo">
-        <span class="rotulo">Serviços</span>
-        <h2>Tudo o que a sua ideia precisa, em um só lugar</h2>
-      </div>
-      <div class="grade grade--servicos">
-        <article class="card">
-          <span class="card__icone"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="#5532E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span>
-          <h3>Aplicativos para iPhone e Android</h3>
-          <p>Seu app funcionando nos dois tipos de celular, com o mesmo visual e a mesma qualidade. Você investe uma vez e alcança todo mundo.</p>
-        </article>
-        <article class="card">
-          <span class="card__icone"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="#5532E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg></span>
-          <h3>Criação de sites</h3>
-          <p>Sites bonitos e rápidos, que funcionam bem no celular e no computador, para apresentar a sua marca e trazer novos clientes.</p>
-        </article>
-        <article class="card">
-          <span class="card__icone"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="#5532E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/><path d="M12 11v5M9.5 13.5h5"/></svg></span>
-          <h3>Sistemas web e SaaS</h3>
-          <p>Plataformas online que funcionam direto no navegador: painéis para gerir o seu negócio ou um serviço próprio para vender por assinatura.</p>
-        </article>
-        <article class="card">
-          <span class="card__icone"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="#5532E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
-          <h3>Design das telas</h3>
-          <p>Telas simples de usar e com a cara da sua marca. Você vê e aprova tudo antes de começarmos a construir.</p>
-        </article>
-        <article class="card">
-          <span class="card__icone"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="#5532E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg></span>
-          <h3>Publicação nas lojas</h3>
-          <p>Cuidamos de toda a burocracia para o seu app aparecer na App Store e no Google Play, pronto para as pessoas baixarem.</p>
-        </article>
-        <article class="card">
-          <span class="card__icone"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="#5532E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></span>
-          <h3>Suporte e melhorias</h3>
-          <p>Depois do lançamento a gente continua junto: correções, atualizações e novidades para o seu app crescer com o seu negócio.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="processo" class="processo">
-      <div class="container secao">
-        <div class="secao__titulo">
-          <span class="rotulo">Como funciona</span>
-          <h2>Quatro etapas, sem complicação</h2>
+          <p class="hero__dica"><span aria-hidden="true">👆</span> Toque e experimente: este é um exemplo do que eu posso criar para você.</p>
         </div>
-        <ol class="grade grade--etapas" style="list-style: none; margin: 0; padding: 0">
-          <li class="etapa"><span class="etapa__numero" aria-hidden="true">01</span><h3>Conversa</h3><p>Você conta a sua ideia, para quem é o app e o que ele precisa resolver. Sem termos técnicos.</p></li>
-          <li class="etapa"><span class="etapa__numero" aria-hidden="true">02</span><h3>Desenho</h3><p>Mostramos como as telas vão ficar e você aprova antes de qualquer coisa ser construída.</p></li>
-          <li class="etapa"><span class="etapa__numero" aria-hidden="true">03</span><h3>Construção</h3><p>Construímos o seu app e você acompanha cada passo, testando no seu próprio celular.</p></li>
-          <li class="etapa"><span class="etapa__numero" aria-hidden="true">04</span><h3>Lançamento</h3><p>Colocamos o app nas lojas e seguimos juntos com ajustes e novas versões.</p></li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="projetos" class="container secao">
-      <div class="secao__titulo">
-        <span class="rotulo">Projetos</span>
-        <h2>O que já saiu do papel</h2>
-      </div>
-      <div class="grade grade--projetos">
-        <article class="projeto">
-          <div class="projeto__imagem projeto__imagem--lavanda">
-            <img src="assets/img/projetos/atelie.png" alt="Tela inicial do sistema do Ateliê Tati Brandão no celular: saldo do dia, saldo a receber, ganhos da quinzena e movimentações (dados de exemplo)" width="1280" height="800" loading="lazy">
-          </div>
-          <div class="projeto__corpo">
-            <span class="projeto__meta">Sistema de gestão financeira</span>
-            <h3>Ateliê Tati Brandão</h3>
-            <p>Controle financeiro para um ateliê com equipe. Cada colaboradora vê os seus ganhos, vales e o saldo da quinzena, e a proprietária acompanha o caixa, as despesas e o fechamento do dia. Tudo pelo celular.</p>
-          </div>
-        </article>
-        <article class="projeto">
-          <div class="projeto__imagem projeto__imagem--roxo">
-            <img src="assets/img/projetos/habitex.png" alt="Tela de hábitos do app Habitex: progresso do dia e hábitos como beber água, leitura, treino e meditar (dados de exemplo)" width="1280" height="800" loading="lazy">
-          </div>
-          <div class="projeto__corpo">
-            <div class="projeto__meta"><span class="selo selo--pequeno">Em desenvolvimento</span><span>Hábitos e rotina</span></div>
-            <h3>Habitex</h3>
-            <p>Tarefas, anotações e hábitos em um só lugar. Você define metas, como beber 3 litros de água por dia, registra com um toque e acompanha a semana em um calendário colorido.</p>
-          </div>
-        </article>
-        <article class="projeto">
-          <div class="projeto__imagem projeto__imagem--profundo">
-            <img src="assets/img/projetos/mynook.svg" alt="Ilustração do app MyNook: busca e cartões com frases, filmes, lugares e fotos salvos" width="640" height="400" loading="lazy">
-          </div>
-          <div class="projeto__corpo">
-            <div class="projeto__meta"><span class="selo selo--pequeno">Em breve</span><span>Memória organizada</span></div>
-            <h3>MyNook</h3>
-            <p>Sua segunda memória: salve frases, filmes, lugares, ideias e prints por texto ou foto, e encontre tudo depois com uma busca.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contato" class="container" style="padding-bottom: var(--secao)">
-      <div class="contato__bloco">
-        <div class="contato__texto">
-          <h2>Vamos tirar seu app do papel?</h2>
-          <p>Conte a sua ideia e receba um orçamento sem compromisso. Prefere conversar agora? Chama a gente no WhatsApp.</p>
-          <a class="btn btn--whatsapp" href="https://wa.me/5521992798870?text=Ol%C3%A1%2C%20vim%20pelo%20site%20MonteiroApps%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20servi%C3%A7o" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.2-4.4A9 9 0 1 1 21 12z"/></svg>
-            Conversar no WhatsApp
-          </a>
-          <ul class="contato__canais">
-            <!-- TODO (pendente): preencher o href e o @ do Instagram/LinkedIn e remover o atributo "hidden" do <li> -->
-            <li hidden><a href="" target="_blank" rel="noopener" data-pendente="instagram">
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
-              Instagram: </a></li>
-            <li hidden><a href="" target="_blank" rel="noopener" data-pendente="linkedin">
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
-              LinkedIn: </a></li>
-          </ul>
+        <div>
+          <div class="cabeca"><span class="rotulo">Como funciona</span></div>
+          <h3 class="titulo">Seu app, do papel <span>à loja.</span></h3>
+          <p>Você tem a ideia, eu cuido do resto: desenho, construo e coloco o seu aplicativo para baixar no iPhone e no Android. Sem você precisar entender de tecnologia.</p>
+          <ol class="etapas">
+            <li><b>Conversa</b>Você conta a ideia, sem termo técnico.</li>
+            <li><b>Desenho</b>Você aprova as telas antes de tudo.</li>
+            <li><b>Construção</b>Você testa no seu próprio celular.</li>
+            <li><b>Lançamento</b>App nas lojas e ajustes depois.</li>
+          </ol>
         </div>
+      </div>
+    </section>
 
-        <!-- Envio por e-mail via FormSubmit (https://formsubmit.co). No primeiro envio chega um e-mail de ativação em monteirooapps@gmail.com. -->
-        <form class="formulario" id="form-contato" action="https://formsubmit.co/ajax/monteirooapps@gmail.com" method="POST" novalidate>
-          <h3 class="formulario__titulo">Ou, se preferir, entre em contato por e-mail</h3>
-          <input type="hidden" name="_subject" value="Novo contato pelo site Monteiro Apps">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" class="formulario__mel" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <label>Nome
-            <input type="text" name="nome" placeholder="Seu nome" autocomplete="name" required>
-          </label>
-          <label>E-mail
-            <input type="email" name="email" placeholder="Para respondermos você" autocomplete="email" required>
-          </label>
-          <label><span>WhatsApp <span class="formulario__opcional">(opcional)</span></span>
-            <input type="tel" name="whatsapp" placeholder="(21) 90000-0000" autocomplete="tel">
-          </label>
-          <label>Sua ideia
-            <textarea name="ideia" rows="4" placeholder="Conte um pouco sobre o app, site ou sistema que você imagina" required></textarea>
-          </label>
-          <button type="submit" class="btn btn--lilas">Enviar por e-mail</button>
-          <p class="formulario__aviso" id="form-aviso" role="status">Respondemos no seu e-mail o quanto antes.</p>
-        </form>
+    <section id="contato" class="secao">
+      <div class="container">
+        <div class="contato">
+          <div>
+            <h2>Vamos tirar a sua ideia do papel?</h2>
+            <p>Me conta o que você imagina e eu te respondo com um orçamento sem compromisso.</p>
+          </div>
+          <div class="contatos">
+            <a class="btn btn--branco" href="https://wa.me/5521992798870?text=Ol%C3%A1%2C%20Jenny!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>
+              WhatsApp
+            </a>
+            <a class="btn btn--contorno" href="https://ig.me/m/monteiro.devv" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
+              Direct no Instagram
+            </a>
+            <a class="btn btn--contorno" href="mailto:monteirooapps@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
+              E-mail
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="rodape">
     <div class="container">
-      <div class="marca">
-        <svg viewBox="0 0 120 120" width="32" height="32" aria-hidden="true"><rect width="120" height="120" rx="32" fill="#5532E0"/><path d="M34 82V40l26 26 26-26v42" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="98" cy="22" r="9" fill="#FF6F61"/></svg>
+      <span class="marca">
+        <svg viewBox="0 0 120 120" width="28" height="28" aria-hidden="true"><rect width="120" height="120" rx="32" fill="#5532E0"/><path d="M34 82V40l26 26 26-26v42" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/><circle cx="98" cy="22" r="9" fill="#FF6F61"/></svg>
         <span class="marca__nome"><b>Monteiro</b> <span>Apps</span></span>
-      </div>
+      </span>
       <small>© <span id="ano">2026</span> Monteiro Apps · Rio de Janeiro, Brasil</small>
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=6"></script>
+  <a class="flutuante" href="https://wa.me/5521992798870?text=Ol%C3%A1%2C%20Jenny!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg></a>
+
+  <script src="assets/js/main.js?v=7"></script>
 </body>
 </html>

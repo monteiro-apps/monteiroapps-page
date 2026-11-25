@@ -141,6 +141,49 @@
     desenhar();
   }
 
+  // Lista de espera do curso (curso.html): envia para o e-mail via FormSubmit
+  var espera = document.getElementById('form-espera');
+  if (espera) {
+    var esperaAviso = document.getElementById('espera-aviso');
+    espera.addEventListener('submit', function (e) {
+      e.preventDefault();
+      esperaAviso.classList.remove('ok');
+      var campos = [espera.nome, espera.email];
+      for (var k = 0; k < campos.length; k++) {
+        if (!campos[k].value.trim() || !campos[k].checkValidity()) {
+          esperaAviso.textContent = campos[k] === espera.email && campos[k].value.trim()
+            ? 'Confira o seu e-mail: parece que falta alguma coisa.'
+            : 'Preencha o seu nome e e-mail para entrar na lista.';
+          campos[k].focus();
+          return;
+        }
+      }
+      var enviar = espera.querySelector('button[type="submit"]');
+      enviar.disabled = true;
+      enviar.textContent = 'Enviando...';
+      // Com data-planilha preenchido, a inscrição vira uma linha na planilha do Google (Apps Script).
+      // Sem ele, vai por e-mail pelo FormSubmit.
+      var planilha = espera.getAttribute('data-planilha');
+      var envio = planilha
+        ? fetch(planilha, { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(espera)) })
+        : fetch(espera.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(espera) })
+            .then(function (r) { return r.json().then(function (d) { if (!r.ok || String(d.success) !== 'true') throw new Error('falha'); }); });
+      envio
+        .then(function () {
+          esperaAviso.textContent = 'Pronto! Você está na lista. Eu te aviso quando abrir.';
+          esperaAviso.classList.add('ok');
+          espera.reset();
+        })
+        .catch(function () {
+          esperaAviso.textContent = 'Não deu para enviar agora. Tente de novo ou me chama no Direct.';
+        })
+        .then(function () {
+          enviar.disabled = false;
+          enviar.textContent = 'Quero entrar na lista';
+        });
+    });
+  }
+
   // Formulário de contato: envia para o e-mail via FormSubmit (veja o README)
   var form = document.getElementById('form-contato');
   var aviso = document.getElementById('form-aviso');
