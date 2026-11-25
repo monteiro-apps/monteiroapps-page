@@ -144,8 +144,8 @@
           </div>
           <!-- Envio por e-mail via FormSubmit, o mesmo serviço do formulário antigo (veja o README). -->
           <!-- TODO (pendente): quando a plataforma de venda estiver escolhida, colocar aqui o botão de compra com o link dela -->
-          <!-- TODO (pendente): colar em data-planilha o URL do app da Web do Apps Script (veja scripts/lista-espera-planilha.gs). Enquanto estiver vazio, a inscrição vai por e-mail. -->
-          <form class="espera" id="form-espera" data-planilha="" action="https://formsubmit.co/ajax/monteirooapps@gmail.com" method="POST" novalidate>
+          <!-- data-planilha: URL do app da Web do Apps Script (scripts/lista-espera-planilha.gs). Cada inscrição vira uma linha na planilha do Drive. -->
+          <form class="espera" id="form-espera" data-planilha="https://script.google.com/macros/s/AKfycbyx66cRHei1P4dPQMaMN5dbKPX2s4kxhECvCii2IFlPE6ffMMp5UhqcogldB4oXcvldtg/exec" action="https://formsubmit.co/ajax/monteirooapps@gmail.com" method="POST" novalidate>
             <input type="hidden" name="_subject" value="Lista de espera: curso Esquadrão de agentes de IA">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="pagina" value="curso">
