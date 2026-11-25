@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jenny Monteiro · Monteiro Apps</title>
-  <meta name="description" content="Jenny Monteiro, da Monteiro Apps: aplicativos para iPhone e Android, sites e automações com IA, do papel à loja.">
+  <title>Jennyffer Monteiro · Monteiro Apps</title>
+  <meta name="description" content="Jennyffer Monteiro, da Monteiro Apps: aplicativos para iPhone e Android, sites e automações com IA, do papel à loja.">
   <meta name="theme-color" content="#5532E0">
-  <meta property="og:title" content="Jenny Monteiro · Monteiro Apps">
+  <meta property="og:title" content="Jennyffer Monteiro · Monteiro Apps">
   <meta property="og:description" content="Aplicativos, sites e automações com IA, do papel à loja.">
   <meta property="og:type" content="website">
   <!-- TODO (pendente): og:url e og:image quando o domínio e a imagem de compartilhamento estiverem prontos -->
@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/site.css?v=1">
+  <link rel="stylesheet" href="assets/css/site.css?v=2">
 </head>
 <body>
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
@@ -37,14 +37,14 @@
   <main id="conteudo">
     <section class="container hero">
       <div class="hero__texto">
-        <h1>Oi, eu sou a Jenny 👋</h1>
+        <h1>Oi, eu sou Jennyffer 👋</h1>
         <p>Desenvolvedora de apps em Flutter. Pela <b>Monteiro Apps</b>, eu faço <b>aplicativos, sites e automações com IA</b>, do papel à loja.</p>
         <span class="local">Rio de Janeiro · aceitando projetos</span>
       </div>
       <div class="perfil">
         <!-- TROCAR: coloque a foto em assets/img/jenny.jpg e troque o "J" por <img src="assets/img/jenny.jpg" alt="Jenny"> -->
-        <div class="avatar" role="img" aria-label="Foto da Jenny">J</div>
-        <div><strong>Jenny Monteiro</strong><br><small>Fundadora da Monteiro Apps</small></div>
+        <div class="avatar" role="img" aria-label="Foto da Jennyffer">J</div>
+        <div><strong>Jennyffer Monteiro</strong><br><small>Fundadora da Monteiro Apps</small></div>
       </div>
     </section>
 
@@ -90,12 +90,13 @@
             <h3>Habitex</h3>
             <p>Tarefas, anotações e hábitos num só lugar, com metas e um calendário colorido da semana.</p>
           </a></li>
-          <li><div class="projeto">
+          <li><button type="button" class="projeto" data-galeria="galeria-atelie">
             <div class="projeto__ico"><img src="assets/img/projetos/atelie.png" alt=""></div>
             <span class="tag">No ar</span>
             <h3>Ateliê Tati Brandão</h3>
             <p>SaaS de gestão financeira para salão e ateliê: cada colaboradora vê ganhos e vales, e a dona acompanha caixa, despesas e fechamento do dia.</p>
-          </div></li>
+            <span class="projeto__ver">Ver telas →</span>
+          </button></li>
           <li><a class="projeto" href="curso.html">
             <div class="projeto__ico"><img src="assets/img/simbolo.svg" alt=""></div>
             <span class="tag">No ar</span>
@@ -267,8 +268,27 @@
     </div>
   </footer>
 
+  <dialog class="galeria" id="galeria-atelie" aria-labelledby="galeria-atelie-titulo">
+    <div class="galeria__topo">
+      <div><h2 id="galeria-atelie-titulo">Ateliê Tati Brandão</h2><small>Telas com dados fictícios, só para você conhecer o sistema.</small></div>
+      <button type="button" class="galeria__fechar" data-fechar aria-label="Fechar">✕</button>
+    </div>
+    <div class="galeria__trilho" tabindex="0" aria-label="Telas do sistema">
+        <figure class="galeria__item"><img src="assets/img/atelie/tela-1.jpg" alt="Colaboradora: saldo do dia, saldo a receber e ganhos da quinzena (dados fictícios)" width="600" height="1200" loading="lazy"><figcaption>Colaboradora: saldo do dia, saldo a receber e ganhos da quinzena</figcaption></figure>
+        <figure class="galeria__item"><img src="assets/img/atelie/tela-2.jpg" alt="Colaboradora: histórico das quinzenas (dados fictícios)" width="600" height="1200" loading="lazy"><figcaption>Colaboradora: histórico das quinzenas</figcaption></figure>
+        <figure class="galeria__item"><img src="assets/img/atelie/tela-3.jpg" alt="Dona: total do mês, parte do salão e despesas (dados fictícios)" width="600" height="1200" loading="lazy"><figcaption>Dona: total do mês, parte do salão e despesas</figcaption></figure>
+        <figure class="galeria__item"><img src="assets/img/atelie/tela-4.jpg" alt="Dona: quanto cada colaboradora tem a receber (dados fictícios)" width="600" height="1200" loading="lazy"><figcaption>Dona: quanto cada colaboradora tem a receber</figcaption></figure>
+        <figure class="galeria__item"><img src="assets/img/atelie/tela-5.jpg" alt="Dona: histórico por mês (dados fictícios)" width="600" height="1200" loading="lazy"><figcaption>Dona: histórico por mês</figcaption></figure>
+    </div>
+    <div class="galeria__setas">
+      <button type="button" data-passo="-1" aria-label="Tela anterior">←</button>
+      <span class="galeria__conta" aria-live="polite">1 / 5</span>
+      <button type="button" data-passo="1" aria-label="Próxima tela">→</button>
+    </div>
+  </dialog>
+
   <a class="flutuante" href="https://wa.me/5521992798870?text=Ol%C3%A1%2C%20Jenny!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener" aria-label="Conversar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg></a>
 
-  <script src="assets/js/main.js?v=7"></script>
+  <script src="assets/js/main.js?v=8"></script>
 </body>
 </html>

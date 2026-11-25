@@ -141,6 +141,37 @@
     desenhar();
   }
 
+  // Galerias em popup (ex.: telas do Ateliê): abre pelo botão com data-galeria
+  document.querySelectorAll('[data-galeria]').forEach(function (botao) {
+    var dlg = document.getElementById(botao.getAttribute('data-galeria'));
+    if (!dlg || !dlg.showModal) return;
+    var trilho = dlg.querySelector('.galeria__trilho');
+    var itens = dlg.querySelectorAll('.galeria__item');
+    var conta = dlg.querySelector('.galeria__conta');
+    var atual = function () {
+      var x = trilho.scrollLeft, melhor = 0;
+      itens.forEach(function (it, i) { if (Math.abs(it.offsetLeft - trilho.offsetLeft - x) < Math.abs(itens[melhor].offsetLeft - trilho.offsetLeft - x)) melhor = i; });
+      return melhor;
+    };
+    var ir = function (i) {
+      i = Math.max(0, Math.min(itens.length - 1, i));
+      trilho.scrollTo({ left: itens[i].offsetLeft - trilho.offsetLeft, behavior: 'smooth' });
+    };
+    trilho.addEventListener('scroll', function () { conta.textContent = (atual() + 1) + ' / ' + itens.length; });
+    botao.addEventListener('click', function () { dlg.showModal(); trilho.scrollLeft = 0; conta.textContent = '1 / ' + itens.length; });
+    dlg.addEventListener('click', function (e) {
+      var r = dlg.getBoundingClientRect();
+      var fora = e.target === dlg && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom);
+      if (fora || e.target.closest('[data-fechar]')) { dlg.close(); return; }
+      var passo = e.target.closest('[data-passo]');
+      if (passo) ir(atual() + Number(passo.getAttribute('data-passo')));
+    });
+    dlg.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') ir(atual() + 1);
+      if (e.key === 'ArrowLeft') ir(atual() - 1);
+    });
+  });
+
   // Lista de espera do curso (curso.html): envia para o e-mail via FormSubmit
   var espera = document.getElementById('form-espera');
   if (espera) {

@@ -200,6 +200,28 @@ a.projeto:hover { border-color: var(--lilas); }
 .espera__aviso { font-size: 13px; color: var(--lavanda); }
 .espera__aviso.ok { color: var(--branco); font-weight: 700; }
 
+/* Galeria (popup) de telas */
+button.projeto { width: 100%; text-align: left; font: inherit; color: inherit; cursor: pointer; }
+button.projeto:hover { border-color: var(--lilas); }
+.projeto__ver { margin-top: auto; font-weight: 700; font-size: 14px; color: var(--roxo); }
+.galeria { width: min(960px, calc(100% - 24px)); max-height: calc(100% - 24px); border: 0; border-radius: 28px; padding: 24px; background: var(--branco); color: var(--texto-corpo); }
+.galeria::backdrop { background: rgba(23, 21, 31, .72); }
+.galeria__topo { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 18px; }
+.galeria__topo h2 { font-size: 22px; }
+.galeria__topo small { color: var(--ardosia); font-size: 14px; }
+.galeria__fechar { flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--borda); background: var(--branco); font-size: 18px; cursor: pointer; color: var(--grafite); }
+.galeria__fechar:hover { background: var(--lavanda); }
+.galeria__trilho { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: 4px; }
+.galeria__trilho::-webkit-scrollbar { display: none; }
+.galeria__item { flex: 0 0 min(280px, 78%); margin: 0; scroll-snap-align: start; }
+.galeria__item img { width: 100%; height: auto; max-height: 62vh; object-fit: cover; object-position: top; border-radius: 20px; border: 1px solid var(--borda); background: #F2F0EA; }
+.galeria__item figcaption { margin-top: 8px; font-size: 13px; color: var(--ardosia); }
+.galeria__setas { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 16px; }
+.galeria__setas button { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--borda); background: var(--branco); font-size: 18px; font-weight: 700; color: var(--roxo); cursor: pointer; }
+.galeria__setas button:hover { background: var(--lavanda); }
+.galeria__conta { font-size: 14px; color: var(--ardosia); min-width: 48px; text-align: center; }
+body:has(.galeria[open]) { overflow: hidden; }
+
 /* Celular e telas menores */
 @media (max-width: 880px) {
   .hero, .sobre, .funciona, .contato, .curso-hero .container, .lado { grid-template-columns: 1fr; }
